@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.col-user{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    position: fixed;
+    top: 40px;
+    
+}
+
+.col-user i{
+    margin-right: 6px;
+}
+
+.col-title{
+    color:#888;
+    font-weight: bold;
+}
+
+.info-user{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tien-ich{
+    margin-bottom: 20px;
+}
+
+.xem-them{
+    color: blue;
+}
+
+@media(max-width:1317px){
+    .col-user{
+        display: none;
+    }
+}

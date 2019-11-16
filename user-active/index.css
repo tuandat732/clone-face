@@ -1,0 +1,24 @@
+.user-active{
+    background-color: #eee;
+    border-left: 1px solid rgba(218, 223, 225, 1);
+    padding: 10px 8px;
+    height: 100%;
+    position: fixed;
+    top: 45px;
+}
+
+.user-active .user{
+    display: flex;
+    margin-top: 10px;
+}
+
+.user-active .user img{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.user-active .user .name{
+    line-height: 2.5rem;
+}

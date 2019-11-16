@@ -1,0 +1,81 @@
+.story{
+    height: 300px;
+    background-color: white;
+    border: 0.6px solid #eee;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(218, 223, 225, 1);
+    overflow: hidden;
+}
+
+.tin{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+.story>.item-story{
+    width: 22.5%;
+    height: 70%;
+    /* background-image: url(https://znews-photo.zadn.vn/w660/Uploaded/chuaplu/2019_05_07/pokemon00.jpg); */
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 5px;
+    
+}
+
+.story a{
+    text-decoration: none;
+}
+
+.img{
+    /* position: absolute; */
+    background-image: url(https://znews-photo.zadn.vn/w660/Uploaded/chuaplu/2019_05_07/pokemon00.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    transition: all 0.4s;
+
+}
+
+.story>.item-story>.ava{
+    border-radius: 50%;
+    width: 30%;
+    height: 20%;
+    border: 3px solid blue;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.layout{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: black;
+    opacity: 0;
+    top:0;
+    transition: all 0.4s;
+    position: absolute;
+}
+
+.item-story:hover .layout{
+    opacity: 0.1;
+}
+
+.item-story:hover .img{
+    transform: scale(1.1);
+}
+
+@media(max-width:696px){
+    .story>.item-story{
+        width: 22%;
+        height: 60%;
+    }
+}

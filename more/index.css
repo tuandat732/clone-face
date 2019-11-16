@@ -1,0 +1,80 @@
+.more{
+    background-color: white;
+    padding: 8px 10px;
+    padding-bottom: 30px;
+    height: fit-content;
+    position: sticky;
+    border-radius: 4px;
+    border:1px solid rgba(218, 223, 225, 1)
+}
+
+.friend{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.more .users .user{
+    display: flex;
+    margin-top: 5px;
+}
+
+.more .users .user img{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.more .users .user .info .name{
+    color: #385898;
+}
+
+.more .users .user .action{
+    display: flex;
+}
+
+.more .users .user .infoo .action .icon{
+    background-color: #eee;
+    border:1px solid rgba(218, 223, 225, 1);
+    margin: 4px 2px;
+    text-align: center;
+    color: grey;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.show-friend{
+    position: relative;
+    cursor: pointer;
+}
+
+.show-friend ul{
+    position: absolute;
+    bottom: 20px;
+    list-style: none;
+    background-color: black;
+    color:white;
+    display: none;
+    padding: 5px 5px;
+}
+
+.show-friend ul::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    left: 10%;
+    bottom: -5px;
+    transform: rotate(45deg);
+}
+
+.show-friend:hover ul{
+    display: block;
+}
+
+.show-friend:hover{
+    text-decoration: underline;
+}
